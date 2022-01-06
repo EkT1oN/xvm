@@ -4,25 +4,21 @@
 {
 	"def": {
 		"textFieldShadow": {
-		"enabled": true,
-		"color": "0x000000",
-		"alpha": 80,
-		"blur": 2,
-		"strength": 2,
-		"distance": 0,
-		"angle": 0 }
+			"enabled": true,
+			"color": "0x000000",
+			"alpha": 80,
+			"blur": 2,
+			"strength": 2,
+			"distance": 0,
+			"angle": 0
+		}
 	},
 	"normal": {
 		"width": 160,
 		"height": 100,
 		"gap": 10,
 		"fields": {
-			// "enabled"  - the visibility of the element
-			// "dx"       - horizontal shift
-			// "dy"       - vertical shift
-			// "alpha"    - transparency
-			// "scale"    - scale
-			"flag": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+			"flag": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1.1 },
 			"tankIcon": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
 			"tankType": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
 			"level": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
@@ -53,22 +49,22 @@
 			// Average damage.
 			{
 				"enabled": true,
-				"x": 1, "y": 28,
-				"width": 18, "height": 18,
+				"x": 1, "y": 30,
+				"width": 20, "height": 20,
 				"alpha": "{{v.tdb?|0}}",
 				"src": "xvm://res/icons/carousel/damage.png"
 			},
 			{
 				"enabled": true,
-				"x": 17, "y": 28,
+				"x": 21, "y": 30,
 				"format": "<b><font face='$FieldFont' size='12' color='{{v.c_xtdb|#CFCFCF}}'>{{v.tdb%d}}</font></b>",
 				"shadow": ${ "def.textFieldShadow" }
 			},
 			// Sign of mastery.
 			{
 				"enabled": true,
-				"x": 1, "y": 12,
-				"width": 23, "height": 23,
+				"x": 1, "y": 10,
+				"width": 25, "height": 25,
 				"src": "{{v.mastery!=0?img://gui/maps/icons/library/proficiency/class_icons_{{v.mastery}}.png}}"
 			},
 			// Battles count.

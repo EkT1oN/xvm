@@ -3,6 +3,7 @@
  */
 {
 	"def": {
+		// ${"colors.xc":"def.self"},
 		"al":   "0x96FF00",            // ally
 		"sq":   "0xFFB964",            // squadman
 		"tk":   "0x00EAFF",            // teamKiller

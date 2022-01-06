@@ -3,33 +3,33 @@
  */
 {
 	"camera": {
-		"enabled": false,
-		"noFlashBang": false,
+		"enabled": true,
+		"noFlashBang": true,
 		"arcade": {
-			"distRange": [2, 25],
+			"distRange": [5, 105],
 			"startDist": null,
-			"scrollSensitivity": 5,
-			"shotRecoilEffect": true
+			"scrollSensitivity": 10,
+			"shotRecoilEffect": false
 		},
 		"postmortem": {
-			"distRange": [2, 25],
+			"distRange": [1, 26],
 			"startDist": null,
 			"scrollSensitivity": 5,
-			"shotRecoilEffect": true
+			"shotRecoilEffect": false
 		},
 		"strategic": {
 			"distRange": [40, 120],
-			"shotRecoilEffect": true
+			"shotRecoilEffect": false
 		},
 		"sniper": {
-			"zooms": [2, 4, 8],
+			"zooms": [1, 5, 9, 13],
 			"startZoom": null,
 			"zoomIndicator": {
 				"enabled": true,
-				"x": 150,
-				"y": 30,
-				"width": 100,
-				"height": 40,
+				"x": 100,
+				"y": 0,
+				"width": 150,
+				"height": 50,
 				"alpha": 100,
 				"rotation": 0,
 				"scaleX": 1,
@@ -38,24 +38,25 @@
 				"borderColor": null,
 				"antiAliasType": "advanced",
 				"textFormat": {
-					"font": "$TitleFont",
-					"size": 16,
-					"color": "0x95CB29",
-					"align": "left",
+					"font": ${"font.xc":"Type.Monospace"},
+					"size": 18,
+					"color": ${"colors.xc":"def.self"},
+					"align": "center",
 					"valign": "center"
 				},
-				"format": "x{{zoom}}",
-				"shadow": 
-				"enabled": true,
-				"distance": 0,
-				"angle": 0,
-				"color": "0x192E0E",
-				"alpha": 100,
-				"blur": 3,
-				"strength": 2
+				"format": "Zoom x{{zoom}}",
+				"shadow": {
+					"enabled": true,
+					"distance": 1,
+					"angle": 45,
+					"color": "0x000000",
+					"alpha": 100,
+					"blur": 3,
+					"strength": 2
+				}
 			}
 		},
-		"shotRecoilEffect": true,
-		"noBinoculars": false
+		"shotRecoilEffect": false,
+		"noBinoculars": true
 	}
 }

@@ -3,7 +3,7 @@
  */
 {
 	"configVersion": "6.1.0",
-	"autoReloadConfig": false,
+	"autoReloadConfig": true,
 	"language": "ru",
 	"userLanguageFolder": "lang",
 	"region": "RU",
