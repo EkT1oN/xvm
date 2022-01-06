@@ -3,9 +3,11 @@
  * Общие параметры миникарты (альтернативный режим).
  */
 {
-  "minimap": { "$ref": { "file": "minimap.xc", "path": "minimap" },
-    // Minimap labels.
-    // Надписи на миникарте.
-    "labels": ${"minimapLabelsAlt.xc":"labels"}
-  }
+	"minimap": {
+		"$ref": {
+			"file": "minimap.xc",
+			"path": "minimap"
+		},
+		"labels": ${"minimapLabelsAlt.xc":"labels"}
+	}
 }
