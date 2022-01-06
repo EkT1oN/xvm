@@ -21,7 +21,7 @@
 		"selfIconAlpha": 100,
 		// Self icon scale. White pointing arrow.
 		// Масштаб своей иконки. Белая стрелка.
-		"selfIconScale": 1,
+		"selfIconScale": 0.66,
 		// Vehicle type icons transparency.
 		// Прозрачность иконок типа техники.
 		"iconAlpha": 100,

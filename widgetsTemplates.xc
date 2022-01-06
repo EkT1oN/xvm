@@ -25,12 +25,12 @@
 				"enabled": true,
 				"distance": 1,       // (in pixels)    / offset distance / дистанция смещения
 				"angle": 0,          // (0.0 .. 360.0) / offset angle    / угол смещения
-				"color": "0x000000", // "0xXXXXXX"     / color           / цвет
+				"color": "0x000000",
 				"alpha": 100,         // (0 .. 100)     / opacity         / прозрачность
-				"blur": 0,           // (0.0 .. 255.0) / blur            / размытие
-				"strength": 2        // (0.0 .. 255.0) / intensity       / интенсивность
+				"blur": 5,           // (0.0 .. 255.0) / blur            / размытие
+				"strength": 10        // (0.0 .. 255.0) / intensity       / интенсивность
 			},
-			"textFormat": { "align": "right", "valign": "bottom", "color": "0x959688" },
+			"textFormat": { "align": "right", "valign": "bottom", "color": "0xFFFFFF" },
 			"format": "<font face='$FieldFont'><textformat leading='-38'><font size='36'>{{py:xvm.formatDate('%H:%M')}}</font><br></textformat><textformat rightMargin='85' leading='-2'>{{py:xvm.formatDate('%A')}}<br><font size='15'>{{py:xvm.formatDate('%d %b %Y')}}</font></textformat></font>"
 		}
 		]

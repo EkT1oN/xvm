@@ -69,14 +69,14 @@
 			"enabled": true,
 			"updateInterval": 5000,
 			"x": 360,
-			"y": 50,
+			"y": 100,
 			"hAlign": "left",
 			"vAlign": "top",
 			"alpha": 100,
-			"bgImage": null,
+			"bgImage": "0xFFFFFF",
 			"delimiter": ":",
-			"maxRows": 5,
-			"columnGap": 1,
+			"maxRows": 4,
+			"columnGap": 10,
 			"leading": 2,
 			"layer": "normal",
 			"showTitle": true,
@@ -86,7 +86,7 @@
 			"errorString": "--",
 			"ignoredServers": [],
 			"fontStyle": {
-				"name": ${"font.xc":"Type.Monospace"},
+				"name": ${"font.xc":"Type.SansSerif"},
 				"size": 12,
 				"bold": true,
 				"italic": false,
@@ -105,13 +105,13 @@
 				"poor": 100
 			},
 			"shadow": {
-				"enabled": false,
-				"distance": 0,
+				"enabled": true,
+				"distance": 1,
 				"angle": 0,
 				"color": "0x000000",
-				"alpha": 70,
-				"blur": 4,
-				"strength": 2
+				"alpha": 100,
+				"blur": 5,
+				"strength": 10
 			}
 		},
 		"onlineServers": {
