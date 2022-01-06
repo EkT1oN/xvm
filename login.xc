@@ -9,15 +9,15 @@
 		"disabledServers": [],
 		"pingServers": {
 			"enabled": true,
-			"updateInterval": 5000,
+			"updateInterval": 1000,
 			"x": 0,
-			"y": 0,
+			"y": 50,
 			"hAlign": "left",
 			"vAlign": "top",
 			"alpha": 100,
 			"bgImage": null,
-			"delimiter": "/ ",
-			"maxRows": 3,
+			"delimiter": ": ",
+			"maxRows": 5,
 			"columnGap": 10,
 			"leading": 0,
 			// true - show title "Ping".
@@ -38,22 +38,18 @@
 			// List of ignored servers, for example, ["RU1", "RU3"].
 			// Список игнорируемых серверов, например, ["RU1", "RU3"].
 			"ignoredServers": [],
-			// Text style.
-			// Стиль текста.
 			"fontStyle": {
-				// Font name.
-				// Название шрифта.
-				"name": "$TextFont",
+				"name": ${"font.xc":"Type.SansSerif"},
 				"size": 12,      // Размер
-				"bold": false,   // Жирный
+				"bold": true,   // Жирный
 				"italic": false, // Курсив
 				// Different colors depending on server response time.
 				// Разные цвета в зависимости от времени отклика сервера.
 				"color": {
-				"great": "0xFFCC66", // Отличный
-				"good":  "0xE5E4E1", // Хороший
-				"poor":  "0x96948F", // Так себе
-				"bad":   "0xD64D4D"  // Плохой
+					"great": ${"colors.xc":"def.colorRating.very_good"},
+					"good":  ${"colors.xc":"def.colorRating.good"},
+					"poor":  ${"colors.xc":"def.colorRating.normal"},
+					"bad":   ${"colors.xc":"def.colorRating.very_bad"}
 				},
 				// Color for server name and delimiter (for example, "0x8080FF"). Empty string "" - use same color as online value.
 				// Цвет для названия сервера и разделителя (например, "0x8080FF"). Пустая строка "" - использовать цвет значения онлайна.

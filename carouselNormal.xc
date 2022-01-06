@@ -6,10 +6,10 @@
 		"textFieldShadow": {
 			"enabled": true,
 			"color": "0x000000",
-			"alpha": 80,
+			"alpha": 100,
 			"blur": 2,
 			"strength": 2,
-			"distance": 0,
+			"distance": 1,
 			"angle": 0
 		}
 	},
@@ -40,64 +40,63 @@
 		"extraFields": [
 			// Slot background.
 			{
-				"x": 1, "y": 1,
-				"layer":
-				"substrate",
+				"x": 0, "y": 0,
+				"layer": "substrate",
 				"width": 160, "height": 100,
-				"bgColor": "0x0A0A0A"
-			},
-			// Average damage.
-			{
-				"enabled": true,
-				"x": 1, "y": 30,
-				"width": 20, "height": 20,
-				"alpha": "{{v.tdb?|0}}",
-				"src": "xvm://res/icons/carousel/damage.png"
-			},
-			{
-				"enabled": true,
-				"x": 21, "y": 30,
-				"format": "<b><font face='$FieldFont' size='12' color='{{v.c_xtdb|#CFCFCF}}'>{{v.tdb%d}}</font></b>",
-				"shadow": ${ "def.textFieldShadow" }
-			},
-			// Sign of mastery.
-			{
-				"enabled": true,
-				"x": 1, "y": 10,
-				"width": 25, "height": 25,
-				"src": "{{v.mastery!=0?img://gui/maps/icons/library/proficiency/class_icons_{{v.mastery}}.png}}"
+				"bgColor": "0x002200"
 			},
 			// Battles count.
 			{
 				"enabled": true,
-				"x": 158, "y": 17,
-				"align": "right",
-				"width": 13, "height": 13,
+				"x": 1, "y": 15,
+				"align": "left",
+				"width": 15, "height": 15,
 				"alpha": "{{v.battles?|0}}",
 				"src": "xvm://res/icons/carousel/battles.png"
 			},
 			{
 				"enabled": true,
-				"x": 145, "y": 14,
-				"align": "right",
-				"format": "<b><font face='$FieldFont' size='12' color='#CFCFCF' alpha='#F0'>{{v.battles}}</font></b>",
+				"x": 14, "y": 10,
+				"align": "left",
+				"format": "<b><font face='$FieldFont' size='16' color='#FFFFFF' alpha='#F0'>{{v.battles}}</font></b>",
 				"shadow": ${ "def.textFieldShadow" }
 			},
 			// Winrate.
 			{
 				"enabled": true,
-				"x": 158, "y": 32,
-				"align": "right",
-				"width": 13, "height": 13,
+				"x": 1, "y": 30,
+				"align": "left",
+				"width": 15, "height": 15,
 				"alpha": "{{v.winrate?|0}}",
 				"src": "xvm://res/icons/carousel/wins.png"
 			},
 			{
 				"enabled": true,
-				"x": 145, "y": 28,
-				"align": "right",
-				"format": "<b><font face='$FieldFont' size='12' color='{{v.c_winrate|#CFCFCF}}'>{{v.winrate%2d~%}}</font></b>",
+				"x": 14, "y": 25,
+				"align": "left",
+				"format": "<b><font face='$FieldFont' size='16' color='{{v.c_winrate|#CFCFCF}}'>{{v.winrate%2d~%}}</font></b>",
 				"shadow": ${ "def.textFieldShadow" }
+			},
+			// Average damage.
+			{
+				"enabled": true,
+				"x": 1, "y": 45,
+				"width": 15, "height": 15,
+				"alpha": "{{v.tdb?|0}}",
+				"src": "xvm://res/icons/carousel/damage.png"
+			},
+			{
+				"enabled": true,
+				"x": 14, "y": 40,
+				"format": "<b><font face='$FieldFont' size='16' color='{{v.c_xtdb|#CFCFCF}}'>{{v.tdb%d}}</font></b>",
+				"shadow": ${ "def.textFieldShadow" }
+			},
+			// Sign of mastery.
+			{
+				"enabled": true,
+				"x": 130, "y": 15,
+				"width": 30, "height": 30,
+				"src": "{{v.mastery!=0?img://gui/maps/icons/library/proficiency/class_icons_{{v.mastery}}.png}}"
 			}
 		]
 	}

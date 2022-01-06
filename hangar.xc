@@ -134,7 +134,7 @@
 			"errorString": "--k",
 			"ignoredServers": [],
 			"fontStyle": {
-				"name": ${"font.xc":"Type.Monospace"},
+				"name": ${"font.xc":"Type.SansSerif"},
 				"size": 14,
 				"bold": true,
 				"italic": false,
@@ -173,7 +173,7 @@
 		},
 		"showCustomizationCounter": false,
 		"barracks": {
-			"nations_order": ["germany", "ussr", "usa", "china", "france", "uk", "japan", "czech", "poland", "sweden", "italy"],
+			"nations_order": ["ussr", "germany", "usa", "china", "france", "uk", "japan", "czech", "poland", "sweden", "italy"],
 			"roles_order": ["commander", "gunner", "driver", "radioman", "loader"],
 			"sorting_criteria": ["nation", "inVehicle", "vehicle", "role"]
 		},

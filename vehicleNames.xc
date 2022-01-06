@@ -878,7 +878,7 @@
 		"ussr-R98_T44_85":                         {"name": null, "short": null},
 		"ussr-R98_T44_85M":                        {"name": null, "short": null},
 		"ussr-R99_T44_122":                        {"name": null, "short": null}
-		// Unused
+		/** Unused
 		"france-F23_AMX_13F3AM_MapsTraining_Dummy_SPG_2":    {"name": null, "short": null},
 		"germany-G04_PzVI_Tiger_I_MapsTraining_Player_HT_2": {"name": null, "short": null},
 		"germany-G09_Hetzer_MapsTraining_Dummy_ATSPG_1":     {"name": null, "short": null},
@@ -893,6 +893,6 @@
 		"ussr-R23_T-43_MapsTraining_Player_MT_2":            {"name": null, "short": null},
 		"ussr-R44_T80_MapsTraining_Dummy_LT_1":              {"name": null, "short": null},
 		"ussr-R72_T150_MapsTraining_Dummy_HT_2":             {"name": null, "short": null}
-
+		*/
 	}
 }
